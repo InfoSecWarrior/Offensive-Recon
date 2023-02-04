@@ -22,7 +22,7 @@ A **vulnerability** is a *weakness* in a system or network that can be exploited
 
 An **Exploit** is a method or technique used to take advantage of a vulnerability in a system or network. Once a vulnerability has been discovered, an attacker can develop an exploit to take advantage of it and gain unauthorized access to a system or perform other malicious actions. Exploits can take many forms such as software programs, scripts, or commands.
 
-## 7. What is Paylod?
+## 7. What is Payload?
 
 A **payload** is the portion of a malware or exploit that carries out the malicious action. It is typically a piece of code or data that is delivered through the exploit and executed on the target system. The payload can take many forms, such as a script, software program, or command, and it can be used to perform a variety of *malicious actions, such as stealing sensitive information, installing backdoors, or disrupting system operations.*
 
