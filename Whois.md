@@ -6,6 +6,8 @@ WHOIS is a valuable tool for those who manage domain names and IP addresses, and
 
 -   [Whois]()
 -   [Securitytrails](https://securitytrails.com/)
+-   [ViewDNS](https://viewdns.info/whois/)
+-   [Central OPS](https://centralops.net/co/)
 
 ## Reverse Whois.
 
@@ -17,7 +19,7 @@ Reverse Whois (also known as Reverse IP Lookup) is a method of searching for dom
 
 - [WhoXY](https://www.whoxy.com/reverse-whois/)
 
-- [ViewDNS](https://viewdns.info/whois/)
+- [ViewDNS](https://viewdns.info/reversewhois/)
 
 - [ICANN](https://lookup.icann.org/en) 
 
