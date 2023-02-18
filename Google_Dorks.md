@@ -69,7 +69,7 @@ No. | Operator | Description
 | 18 | intitle:"index of */vendor/drupal/console-en/" | Search for Drupal Console directory |
 | 19 | intitle:"index of" */admin+password site:.com | Search for admin and password directories on a specific website |
 | 20 | intitle:"Index of c:\Windows\" | Search for directory listings in Windows folders |
-| 21 | intitle:"index of\" inurl:ftp (pub | incoming) | Search for FTP directory listings |
+| 21 | intitle:"index of\" inurl:ftp (pub OR incoming) | Search for FTP directory listings |
 | 22 | intitle:index.of passwd passwd.bak | Search for password files |
 | 23 | intext:"Index of /" +password.txt | Search for password files in directory listings |
 | 24 | intitle:"index of" /private | Search for private directories |
