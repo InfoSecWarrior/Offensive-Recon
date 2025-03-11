@@ -241,11 +241,11 @@ Let me know if you need more details!
   → Copy the API Key
 
 ```bash
-# shodan -h
+shodan -h
 ```
 
 ```bash
-# shodan init <API Key>
+shodan init <API Key>
 ```
 
 The API Key will be setted to your Shodan CLI Tool
