@@ -1,155 +1,248 @@
-# E-mail.
-
-Email, short for "electronic mail," is a method of exchanging digital messages between people using electronic devices, such as computers or mobile phones. It is a popular means of communication because it is fast, convenient, and can be sent to anyone worldwide with an email address.
-
-An email address typically consists of three parts: a username or account name, a domain name, and a top-level domain. The username identifies the specific user's email account, while the domain name specifies the email service provider and email server that manages the user's email account. For example, in the email address john.smith@example.com, "john.smith" is the username, "example" is the domain name, and ".com" is the top-level domain.
-## Email communication components.
-
-### Mail User agent (MUA)
-
-The Mail User Agent (MUA) is an email client software that allows users to compose, read, and manage their email messages. It is a program or web-based service that enables users to send, receive, and manage email messages.
-
--   ***Mail user agent (mua) program***
-    
-    **1. Microsoft Outlook:-** This is a popular email client that comes as part of the Microsoft Office suite. It allows users to manage email, calendar, tasks, and contacts all in one place.
-    
-    **2. Mozilla Thunderbird:-** This is a free and open-source email client that is available for Windows, macOS, and Linux. It includes features like message filtering, advanced search, and support for multiple email accounts.
-    
-    **3. Windows Mail:-** This is the default email client for Windows 10. It allows users to manage multiple email accounts and includes features like a calendar and task manager.
-    
-    **4. Apple Mail:-**  This is the default email client for Mac computers and iOS devices. It includes features like message threading, smart mailboxes, and integration with other Apple applications.
-    
-    **5. Sylpheed:-** This is a free and open-source email client for Windows and Linux systems. It includes features like message filtering, support for multiple email accounts, and a plugin system for extending functionality.
-
-    **6. KMail:-** This is a free and open-source email client for Linux systems. It includes features like message filtering, support for multiple email accounts, and integration with the KDE desktop environment.
-
-    
--   ***Mail user agent (mua) web-based programs.***
-    
-    **1. Gmail:-** This is a popular web-based email client that is part of the Google suite of applications. It allows users to access email from any device with internet access and includes features like spam filtering and conversation threading.
-
-    **2. Outlook.com:-** This is a web-based email client that is part of the Microsoft suite of applications. It allows users to manage email, calendar, tasks, and contacts all in one place.
-
-    **3. Yahoo Mail:-** This is a web-based email client that is part of the Yahoo suite of applications. It includes features like a calendar, task manager, and integration with other Yahoo applications.
-
-    **4. Zoho Mail:-** This is a web-based email client that is part of the Zoho suite of applications. It includes features like message filtering, support for multiple email accounts, and integration with other Zoho applications.
-
-    **5. ProtonMail:-** This is a web-based email client that is focused on security and privacy. It includes features like end-to-end encryption, message expiration, and support for self-destructing messages.
-
-    **6. FastMail:-** This is a web-based email client that includes features like message filtering, support for multiple email accounts, and integration with third-party applications.
-
-### Mail transfer agent (MTA)
-
-A Mail Transfer Agent (MTA) is a type of software application that manages the transmission of email messages from one computer or server to another. It is also known as a mail server or SMTP (Simple Mail Transfer Protocol) server.
-
-### Mail Deliver agent (MDA)
-
-A Mail Delivery Agent (MDA) is a software program that handles the delivery of email messages from the email server to the recipient's mailbox. It is responsible for storing the email messages in the appropriate mailbox, where they can be retrieved by the recipient using a mail client. The MDA is typically used in conjunction with a Mail Transfer Agent (MTA), which is responsible for routing email messages between different email servers.
-
-The MDA uses either the Post Office Protocol version 3 (POP3) or the Internet Message Access Protocol (IMAP) to deliver email messages to the recipient's mailbox. 
-
-## Simple Mail Transfer Protocol (SMTP).
-
-Simple Mail Transfer Protocol (SMTP) is a protocol used for transmitting email messages between servers on the internet. It is the standard protocol used for sending email messages and is responsible for the delivery of email from the sender's mail server to the recipient's mail server.
-
-***The most common ports used by SMTP are:***
-
--   **Port 25 -** This is the default port used for non-encrypted communication. It is used for sending email messages from one server to another over the internet.
--   **Port 465 -** This is the port used for SMTP over SSL/TLS (Secure Sockets Layer/Transport Layer Security) encrypted communication. It is used to send email messages securely over the internet to protect the email data from interception or eavesdropping.
-
--   **Port 587 -** This is the port used for SMTP submission. It is used by email clients to submit email messages to the mail server for delivery.
-
--   **Port 2525 -** This is an alternative port used by some mail servers for SMTP submission. It is not an official port number, but some mail servers use it to avoid issues with port 587.
-
-## Internet Message Access Protocol (IMAP).
-
-Internet Message Access Protocol (IMAP) is a protocol used for retrieving email messages from a mail server to an email client. It is an alternative to POP3 (Post Office Protocol version 3), which is another protocol used for email retrieval.
-
-***By default, the IMAP protocol uses two ports for communication:***
-
--   **Port 143 -** This is the default IMAP port used for non-encrypted communication. When a client connects to the server using this port, the communication between them is not encrypted, which can leave the email data vulnerable to interception or eavesdropping.
-
--   **Port 993 -** This is the port used for encrypted communication using IMAP over SSL/TLS. When a client connects to the server using this port, the communication is encrypted, providing an extra layer of security and protecting the email data from interception or eavesdropping.
 
 
+## Email Tracking & Protocols
 
-## Post Office Protocol Version 3 (POP3).
+### What is Email?
 
-Post Office Protocol Version 3 (POP3) is a protocol used for retrieving email messages from a web server to a local email client, such as Microsoft Outlook or Thunderbird.
+**Email (Electronic Mail)** is a method for sending and receiving messages over the internet, enabling communication between users across various platforms and devices.
 
-When an email client connects to a POP3 server, it downloads copies of the messages stored on the server to the client's device. This allows the user to read and manage their email messages without needing to remain connected to the internet or the server.
+### Three Parts of an Email Address
 
-***By default, the POP3 protocol uses two ports for communication:***
+**Example**: [sachin@armourinfosec.com](mailto:sachin@armourinfosec.com)
 
--   **Port 110 -** This is the default POP3 port used for non-encrypted communication. When a client connects to the server using this port, the communication between them is not encrypted, which can leave the email data vulnerable to interception or eavesdropping.
+1. **Username (sachin)**: The unique identifier for the user’s account.
+2. **Separator (@)**: Connects the username to the domain.
+3. **Domain ([armourinfosec.com](http://armourinfosec.com/))**: Represents the organization, company, or service hosting the email.
 
--   **Port 995 -** This is the port used for encrypted communication using POP3 over SSL/TLS. When a client connects to the server using this port, the communication is encrypted, providing an extra layer of security and protecting the email data from interception or eavesdropping.
+---
 
-### Waht Make Up An Email?
+### Mail User Agent (MUA)
 
--   **Header:** The header of an email contains information about the message, such as the sender and recipient email addresses, the date and time the message was sent, and the subject line. It also contains any additional information such as the email's priority, the type of content, and any message IDs or tracking codes.
+**Definition**: A Mail User Agent (MUA) is software that enables users to compose, send, and receive emails.
 
+### Examples of MUA Programs:
 
--   **Body:** The body of an email contains the main content of the message, including text, images, and links. It can also contain formatting, such as bold or italicized text, and may include signatures, disclaimers, or legal notices.
+- **Microsoft Outlook**: Desktop email client for managing emails, calendars, and contacts.
+- **Mozilla Thunderbird**: Open-source email client with robust customization options.
 
--   **Attachment:** An attachment is a separate file that is sent along with the email message. Attachments can be any type of file, such as documents, images, or videos, and are often used to share files or data between the sender and recipient.
+### Web-Based MUA Clients:
 
+- **Gmail**: Google’s web-based email service.
+- **Yahoo Mail**: Yahoo’s email platform.
+- [**Outlook.com**](http://outlook.com/): Microsoft’s web-based email service.
 
-### Email Tracking 
+---
 
-Email tracking is the practice of monitoring the delivery and open rates of emails, as well as other actions taken by recipients, such as clicking on links or downloading attachments. Email tracking typically involves embedding a small image or tracking pixel in the email content, which allows the sender to receive information about when and how the email was opened and accessed.
+### Mail Delivery Agent (MDA)
 
--   ***Some Of Website***
-    
-    [Getnotify.](https://www.getnotify.com/)
-    
-    [Readnotify.](https://www.readnotify.com/)
-    
-    [Mailtrack.](https://mailtrack.io/en/)
-    
-    [Outreach.](https://www.outreach.io/)
-    
-    [Cirrusinsight.](https://www.cirrusinsight.com/email-tracking)
-    
-    [Yesware.](https://www.yesware.com/feature/email-tracking)
+**Definition**: A Mail Delivery Agent (MDA) is software responsible for receiving emails from the Mail Transfer Agent (MTA) and delivering them to the recipient’s mailbox.
 
-### Email Spoofing
+### MDA Workflow:
 
-Email spoofing is the practice of forging the email header to make it appear as if an email message was sent from a different sender than the actual sender. In other words, email spoofing is a technique used by attackers to make an email message appear to come from a legitimate source, such as a trusted organization, to trick the recipient into taking an action that benefits the attacker. Email spoofing can be used for a variety of malicious purposes, such as phishing scams, social engineering attacks, and malware distribution. 
+1. **Sender MUA** → **Sender MTA** → **Recipient MTA** → **MDA** → **Recipient Mailbox**.
+    - The MTA routes the email to the recipient’s mail server.
+    - The MDA delivers the email to the recipient’s mailbox (e.g., /var/mail/username or a Maildir structure).
 
-Preventing email spoofing requires the use of email authentication protocols, such as SPF, DKIM, BIMI and DMARC, which verify the authenticity of an email message and the identity of the sender. 
+### Common MDA Protocols:
 
--   ***Some Of Website***
+| **Protocol** | **Description** | **Default Port** | **Secure Port** |
+| --- | --- | --- | --- |
+| **POP3** | Downloads emails to the client, typically deleting them from the server. | 110 | 995 (SSL/TLS) |
+| **IMAP** | Accesses emails on the server, syncing across multiple devices. | 143 | 993 (SSL/TLS) |
 
-    [emkei.](https://emkei.cz/)
-    
-    [anonymailer.](https://www.anonymailer.net/)
-    
-    [spoofbox.](https://www.spoofbox.com/en/preview/spoof-email)
-    
-    [sendanonymousemail.](http://www.sendanonymousemail.net/)
+### Popular MDA Software:
 
+| **MDA Tool** | **Description** |
+| --- | --- |
+| **Procmail** | One of the oldest MDAs, supports advanced filtering and sorting of emails. |
+| **Maildrop** | Lightweight MDA, commonly used with the Courier mail server. |
+| **Dovecot** | Popular for IMAP/POP3 services and mailbox delivery. |
+| **Postfix (Local)** | Can function as an MDA for local delivery when configured. |
+| **Fetchmail** | Retrieves emails from remote servers, often used with an MDA for local delivery. |
 
-### Types of email authentication methods.
+### Key Points:
 
--   **SPF (Sender Policy Framework)** - SPF is an email authentication method that verifies the IP address of the email sender authorized to send emails for the domain in question. SPF records are added to a domain's DNS records and specify which IP addresses are authorized to send emails on behalf of the domain. When an email is received, the recipient's email server checks the SPF record to verify the authenticity of the email sender.
+- The MDA **does not send emails**; it only handles local delivery to the recipient’s mailbox.
+- MDAs may perform tasks like filtering, sorting, or forwarding emails based on rules.
 
--   **DKIM (DomainKeys Identified Mail)** - DKIM is an email authentication method that verifies the email was sent from an authorized domain by digitally signing the email header using encryption keys. DKIM records are added to a domain's DNS records and are used to verify the authenticity of the email message and the identity of the sender.
+---
 
--   **BIMI (Brand Indicators for Message Identification)** - BIMI is a newer email authentication method that allows domain owners to display their brand logo in the email recipient's inbox if the email message passes authentication checks. BIMI works by using DMARC to verify the authenticity of the email message and then using a verified logo file to display the brand logo in the email client. BIMI is designed to help improve brand recognition and combat phishing attacks.
+### Mail Transfer Agent (MTA)
 
--   **DMARC (Domain-based Message Authentication, Reporting, and Conformance)** DMARC is an email authentication method that uses both SPF and DKIM to provide a comprehensive authentication framework for email messages. DMARC also provides a reporting mechanism to help domain owners monitor the email activity associated with their domain. DMARC policies are added to a domain's DNS records and specify how email servers should handle emails that fail authentication checks.
+**Definition**: A Mail Transfer Agent (MTA) is software responsible for sending, receiving, and routing email messages between mail servers.
 
+### What Does an MTA Do?
 
--   ***Some Of Website***
-    
-    [Mx toolbox.](https://mxtoolbox.com/)
+- Accepts outgoing emails from the sender’s MUA.
+- Routes emails to the recipient’s MTA (or relays through intermediate MTAs).
+- Hands off emails to the MDA for final delivery to the recipient’s mailbox.
 
-    [Dmarcanalyzer.](https://www.dmarcanalyzer.com/)
+### MTA Workflow:
 
-    
-    [Easydmarc.](https://easydmarc.com/)
-    
-    [Dmarcian.](https://dmarcian.com/)
+**Sender MUA** → **Sender MTA** → **[Internet]** → **Recipient MTA** → **MDA** → **Recipient Mailbox**.
 
-    [Valimail.](https://domain-checker.valimail.com/dmarc)
+### Protocol Used:
+
+| **Protocol** | **Purpose** | **Port (Unencrypted)** | **Port (Encrypted)** |
+| --- | --- | --- | --- |
+| **SMTP** | Sending and relaying emails | 25 | 465 (SSL), 587 (STARTTLS) |
+
+### Popular MTA Software:
+
+| **MTA Tool** | **Description** |
+| --- | --- |
+| **Postfix** | Secure, fast, and widely used open-source MTA (common default on Linux). |
+| **Sendmail** | One of the earliest MTAs, powerful but complex to configure. |
+| **Exim** | Flexible MTA, often used in cPanel hosting environments. |
+| **Qmail** | Secure and modular MTA with a focus on simplicity. |
+| **Microsoft Exchange Server** | Enterprise-grade mail server with MTA capabilities. |
+
+---
+
+### Diagram: Email Flow (MUA → MTA → MDA)
+
+1. **Sender’s MUA**: Composes and sends the email.
+2. **Sender’s MTA**: Transfers the email to the internet using **SMTP**.
+3. **Recipient’s MTA**: Receives the email via the recipient’s MX record using **SMTP**.
+4. **Recipient’s MDA**: Delivers the email to the recipient’s mailbox using **POP3** or **IMAP**.
+
+**Legend**:
+
+- **MUA**: Email client (e.g., Outlook, Thunderbird).
+- **MTA**: Mail server (e.g., Postfix, Sendmail).
+- **MDA**: Handles mailbox delivery (e.g., Dovecot, Procmail).
+- **Protocols**:
+    - **MUA → MTA**: Uses SMTP.
+    - **MTA → MTA**: Uses SMTP.
+    - **MTA → MDA**: Typically local delivery.
+    - **MDA → MUA (reading)**: Uses POP3 or IMAP.
+
+---
+
+### What is Email Tracking?
+
+**Definition**: Email tracking involves monitoring and analyzing email communication to gather metadata and insights, particularly useful in **cyber forensics**, **incident response**, and **phishing investigations**.
+
+### Information Gathered via Email Tracking:
+
+- **Sender’s IP Address**: Identifies the originating server or device.
+- **Geographic Location**: Approximated based on IP address or mail server location.
+- **Email Service Provider**: Identifies the service used (e.g., Gmail, Yahoo).
+- **Time and Date**: Records when the email was sent.
+- **Mail Server Hops**: Traces the email’s path through servers via email headers.
+
+### How Email Tracking Works:
+
+- **Email Headers**: Contain metadata about the email’s journey, including sender details, server IPs, and timestamps.
+- **Tools for Analysis**: Software like **Wireshark**, **Email Header Analyzer**, or forensic tools can extract and interpret header data.
+- **Use Cases**:
+    - Identifying phishing attempts by analyzing suspicious sender details.
+    - Tracking the source of malicious emails in cyber investigations.
+    - Verifying email authenticity in legal or forensic contexts.
+
+---
+
+### Additional Notes
+
+- **Security Considerations**:
+    - Use encrypted ports (e.g., 993 for IMAP, 995 for POP3, 465/587 for SMTP) to protect email communication.
+    - Be cautious with email tracking, as it may involve privacy concerns or legal restrictions depending on jurisdiction.
+- **Modern Email Tracking**:
+    - Advanced tracking may involve third-party tools (e.g., Mailtrack, HubSpot) that embed tracking pixels to monitor email opens or clicks.
+    - These tools are commonly used in marketing but can also aid in security investigations.
+
+---
+
+# Email Spoofing Notes
+
+## 1. What is Email Spoofing?
+
+Email spoofing is a cyber attack technique where the "From" address of an email is forged to appear as if it originates from a trusted or legitimate source, when it does not. The goal is to deceive recipients into opening, trusting, or acting on fraudulent emails, such as clicking malicious links, downloading attachments, or disclosing sensitive information.
+
+## 2. How Email Spoofing Works
+
+Spoofing manipulates the SMTP "MAIL FROM" or "From" header in an email:
+
+- **SMTP lacks built-in authentication**, enabling attackers to forge the sender field.
+- Attackers use **open mail relays** or **misconfigured Mail Transfer Agents (MTAs)** to send spoofed emails.
+- Advanced techniques involve faking the **Reply-To** address, **display name**, or entire email header.
+- **Emotional bait** (e.g., messages like "SOORY BABU") may trick users into clicking links (e.g., disguised Gmail preview links), which can open in a new tab and potentially expose the recipient’s **public IP address**.
+
+### Example of a Spoofed Header
+
+```
+From: "Bank Support" <support@bank.com>
+Reply-To: hacker@gmail.com
+Received: from attacker-server.com (192.0.2.1)
+
+```
+
+The "From" address appears legitimate, but the email originates from `attacker-server.com`.
+
+### Gmail Sandbox
+
+The **Gmail Sandbox** is a testing environment for developers to safely test email-sending applications without sending real emails. However, attackers may exploit spoofed emails with malicious links (e.g., Gmail preview links) to lure users, potentially exposing their **public IP address** or redirecting them to phishing pages.
+
+## 3. Risks of Email Spoofing
+
+- **Phishing Attacks**: Tricking users into sharing sensitive information.
+- **Business Email Compromise (BEC)**: Impersonating executives to authorize fraudulent transactions.
+- **Credential Theft**: Stealing login credentials via fake login pages.
+- **Malware Distribution**: Delivering malicious attachments or links.
+
+## 4. How to Detect Email Spoofing
+
+- **Check Email Headers**: Look for suspicious `Received:` lines or IP addresses that don’t match the claimed sender.
+- **Verify Email Authentication**:
+    - **SPF (Sender Policy Framework)**: Confirms if the sending server is authorized.
+    - **DKIM (DomainKeys Identified Mail)**: Validates email signatures.
+    - **DMARC (Domain-based Message Authentication, Reporting, and Conformance)**: Ensures SPF/DKIM alignment and specifies handling of failed emails.
+- Be cautious of **emotional bait** messages urging immediate action.
+
+## 5. Tools to Analyze Spoofed Emails
+
+| **Tool** | **Description** |
+| --- | --- |
+| MXToolbox SPF/DKIM Checker | Analyzes SPF, DKIM, and DMARC records for email authentication issues. |
+| Google Admin Toolbox Messageheader Analyzer | Examines email headers to trace origins and detect spoofing. |
+| Cyber Forensics Email Tracer | Traces email origins using header analysis and IP tracking. |
+| IP2Location Email Tracer | Identifies the geographic location of the email’s sending server. |
+
+## 6. Online Email Spoofing Tools (Used by Attackers or for Testing)
+
+| **Tool** | **Description** |
+| --- | --- |
+| Anonymailer.net | Sends anonymous or spoofed emails without registration. |
+| Emkei.cz | Web interface for spoofing emails with full header control. |
+| SpoofBox Email Preview | Provides spoofed email and SMS testing tools, sometimes requiring login. |
+
+**Note**: These tools are often used in controlled environments like the **Gmail Sandbox** for testing. Malicious actors may misuse them for phishing or other attacks.
+
+## 7. DMARC Record Checker Tools
+
+Use these tools to verify a domain’s DMARC, SPF, and DKIM records for email protection.
+
+| **Tool** | **Description** |
+| --- | --- |
+| EasyDMARC Lookup Tool | Checks DMARC, SPF, and DKIM records for any domain. |
+| MXToolbox | Multi-purpose tool for DNS, SMTP, and email authentication checks. |
+| DMARCian Inspector | Visualizes DMARC records and evaluates alignment. |
+
+## 8. Command-Line: Check DMARC/SPF/DKIM TXT Records with `dig`
+
+Use the `dig` command to query DNS TXT records for email authentication settings.
+
+```bash
+# Check TXT records for armourinfosec.com
+dig txt armourinfosec.com
+
+# Check TXT records for india.gov.in
+dig txt india.gov.in
+
+```
+
+**Look for results containing**:
+
+- `v=DMARC1;` for DMARC policies.
+- `v=spf1` for SPF records.
+- `k=rsa; p=...` for DKIM (in selector subdomains, e.g., `selector._domainkey.example.com`).
