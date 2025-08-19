@@ -448,3 +448,7 @@ intitle:"index of" "serviceAccount.json"
 filetype:pem "PRIVATE KEY" -github
 inurl:admin intitle:index.of config.php
 intitle:"index of" intext:firebase.json
+site:huggingface.co filetype:env
+site:huggingface.co filetype:env "API_KEY"
+filetype:log "loss" "epoch"
+filetype:txt "training_args" OR filetype:log "batch_size"
